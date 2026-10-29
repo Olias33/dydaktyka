@@ -6,7 +6,109 @@
              <title> formularz_shelkovnikova </title> 
      </head> 
     <body> 
- Jestem na stronie formularzu<br>
+ 
+<body bgcolor="#CCFFFF"> 
+
+<center><h1>Formularz zgłoszeniowy na wycieczkę szkolną</h1></center> 
+
+<form enctype="text/plain" action="mailto:mkryniew@wp.pl" subject="formularz_dane" method="Post"> 
+  <TABLE width="950" align="center" border="0" cellpadding="5"> 
+    
+    <!-- РЯД 1 -->
+    <TR>
+      <TD width="470" valign="top">
+        <b>1. Dane uczestnika:</b><br><br>
+        <b>Imię:</b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input name="imie" size="22"><br><br> 
+        <b>Nazwisko:</b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input name="nazwisko_ucz" size="22"><br><br> 
+        <b>Klasa:</b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input name="klasa" size="22"><br><br> 
+        <b>Numer telefonu:</b> &nbsp <input name="tel" size="22">
+      </TD> 
+      
+      <TD width="470" valign="top">
+        <b>6. Ulubiony kolor:</b><br>
+        <input type="color" name="kolor"><br><br>
+
+        <b>7. Jak bardzo czekasz na wycieczkę?</b><br>
+        <input type="range" name="czekanie" min="1" max="10"><br><br>
+
+        <b>8. Dodatkowe informacje:</b><br>
+        <textarea name="info" cols="30" rows="3" maxlength="150"></textarea>
+      </TD>
+    </TR> 
+
+    <!-- РЯД 2: Пункт 2 слева, а пункт 9 сразу подтягивается наверх справа -->
+    <TR> 
+      <TD width="470" valign="top">
+        <b>2. Wybierz miejsce wycieczki:</b><br><br> 
+        <input type="radio" name="miejsce" value="warszawa"> Warszawa<br><br> 
+        <input type="radio" name="miejsce" value="krakow"> Kraków<br><br> 
+        <input type="radio" name="miejsce" value="zakopane"> Zakopane
+      </TD> 
+
+      <TD width="470" valign="top">
+        <b>9. Ile dni ma trwać wycieczka?</b><br><br>
+        <input type="radio" name="dni" value="1"> 1 dzień<br><br>
+        <input type="radio" name="dni" value="2"> 2 dni<br><br>
+        <input type="radio" name="dni" value="3"> 3 dni
+      </TD> 
+    </TR> 
+
+    <!-- РЯД 3 -->
+    <TR> 
+      <TD width="470" valign="top">
+        <b>3. Wybierz środek transportu:</b><br><br> 
+        <input type="radio" name="transport" value="autobus"> Autobus<br><br> 
+        <input type="radio" name="transport" value="pociag"> Pociąg
+      </TD> 
+
+      <TD width="470" valign="top">
+        <b>10. Czy potrzebujesz noclegu?</b><br>
+        <input type="radio" name="nocleg" value="tak"> Tak<br>
+        <input type="radio" name="nocleg" value="nie"> Nie<br><br>
+
+        <b>11. Jaki rodzaj posiłku wybierasz?</b><br>
+        <input type="radio" name="posilek" value="standard"> Standardowy<br>
+        <input type="radio" name="posilek" value="wege"> Wegetariański<br>
+        <input type="radio" name="posilek" value="bezgluten"> Bezglutenowy
+      </TD>
+    </TR> 
+
+    <!-- РЯД 4 -->
+    <TR> 
+      <TD width="470" valign="top">
+        <b>4. Wybierz dodatkowe atrakcje:</b><br><br> 
+        <input type="checkbox" name="atrakcja" value="muzeum"> Zwiedzanie muzeum<br><br> 
+        <input type="checkbox" name="atrakcja" value="spacer"> Spacer<br><br> 
+        <input type="checkbox" name="atrakcja" value="kino"> Kino
+      </TD> 
+
+      <TD width="470" valign="top">
+        <!-- Свободное место справа -->
+      </TD>
+    </TR> 
+
+    <!-- РЯД 5 -->
+    <TR>
+      <TD width="470" valign="top">
+        <b>5. Data wycieczki:</b><br><br>
+        <input type="date" name="data">
+      </TD>
+      <TD width="470" valign="top"></TD>
+    </TR>
+
+    <!-- РЯД 6: Кнопки -->
+    <TR> 
+      <TD width="470" align="center">
+        <input type="reset" value="Reset" style="height:50px; width:150px"> 
+      </TD> 
+      <TD width="470" align="center"> 
+        <input type="submit" value="Wyślij formularz" style="height:50px; width:150px"> 
+      </TD> 
+    </TR> 
+
+  </TABLE> 
+</form> 
+
 
 <A HREF="index.html"> wróć </A>
     </body> 
